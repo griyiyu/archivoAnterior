@@ -1,0 +1,16 @@
+<h1>Editing office</h1>
+ 
+<%= form_for :office, url: office_path(@office), method: :patch do |o| %>
+  
+  <p>
+    <%= o.label :name %><br>
+    <%= o.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= o.submit %>
+  </p>
+ 
+<% end %>
+ 
+<%= link_to 'Back', offices_path %>
